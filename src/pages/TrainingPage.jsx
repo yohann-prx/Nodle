@@ -41,6 +41,167 @@ const TrainingPage = () => {
               </div>
             </div>
 
+            <div className="flex justify-between items-center">
+              <button
+                className="text-gray-700 hover:text-primary transition-colors flex items-center"
+                onClick={() => setShowFilters(!showFilters)}
+              >
+                <Filter className="h-5 w-5 mr-2" />
+                <span>Filtres</span>
+              </button>
+
+              <div className="flex items-center space-x-2">
+                <button
+                  className={`p-2 rounded ${viewMode === "grid" ? "bg-gray-100 text-primary" : "text-gray-500 hover:text-primary"}`}
+                  onClick={() => setViewMode("grid")}
+                >
+                  <Grid className="h-5 w-5" />
+                </button>
+                <button
+                  className={`p-2 rounded ${viewMode === "list" ? "bg-gray-100 text-primary" : "text-gray-500 hover:text-primary"}`}
+                  onClick={() => setViewMode("list")}
+                >
+                  <List className="h-5 w-5" />
+                </button>
+              </div>
+            </div>
+
+            {showFilters && (
+              <motion.div
+                className="mt-6 pt-6 border-t border-gray-200"
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div>
+                    <h3 className="font-medium text-gray-900 mb-2">
+                      Type de programme
+                    </h3>
+                    <div className="space-y-2">
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          className="rounded text-primary focus:ring-primary"
+                        />
+                        <span className="ml-2 text-gray-700">Bootcamp</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          className="rounded text-primary focus:ring-primary"
+                        />
+                        <span className="ml-2 text-gray-700">
+                          Certification
+                        </span>
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          className="rounded text-primary focus:ring-primary"
+                        />
+                        <span className="ml-2 text-gray-700">Bachelor</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          className="rounded text-primary focus:ring-primary"
+                        />
+                        <span className="ml-2 text-gray-700">Master</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="font-medium text-gray-900 mb-2">Durée</h3>
+                    <div className="space-y-2">
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          className="rounded text-primary focus:ring-primary"
+                        />
+                        <span className="ml-2 text-gray-700">
+                          Moins de 3 mois
+                        </span>
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          className="rounded text-primary focus:ring-primary"
+                        />
+                        <span className="ml-2 text-gray-700">3-6 mois</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          className="rounded text-primary focus:ring-primary"
+                        />
+                        <span className="ml-2 text-gray-700">6-12 mois</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          className="rounded text-primary focus:ring-primary"
+                        />
+                        <span className="ml-2 text-gray-700">Plus d'un an</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="font-medium text-gray-900 mb-2">
+                      Spécialisation
+                    </h3>
+                    <div className="space-y-2">
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          className="rounded text-primary focus:ring-primary"
+                        />
+                        <span className="ml-2 text-gray-700">
+                          Web Development
+                        </span>
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          className="rounded text-primary focus:ring-primary"
+                        />
+                        <span className="ml-2 text-gray-700">UX/UI Design</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          className="rounded text-primary focus:ring-primary"
+                        />
+                        <span className="ml-2 text-gray-700">Data Science</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          className="rounded text-primary focus:ring-primary"
+                        />
+                        <span className="ml-2 text-gray-700">
+                          Cybersecurity
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 flex justify-end">
+                  <button className="px-4 py-2 bg-gray-200 text-gray-700 rounded-md mr-3 hover:bg-gray-300 transition-colors">
+                    Réinitialiser
+                  </button>
+                  <button className="px-4 py-2 bg-primary text-white rounded-md hover:bg-primary-dark transition-colors">
+                    Appliquer les filtres
+                  </button>
+                </div>
+              </motion.div>
+            )}
+          </div>
+
           <div
             className={`grid ${viewMode === "grid" ? "grid-cols-1 md:grid-cols-2 xl:grid-cols-3" : "grid-cols-1"} gap-6`}
           >
