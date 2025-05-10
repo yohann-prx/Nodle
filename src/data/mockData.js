@@ -153,3 +153,55 @@ export const mockCourses = [
     publishedAt: "2025-02-18",
   },
 ];
+
+// Mock data for articles
+export const mockArticles = [
+  {
+    id: "a1",
+    title: "The Future of Web Development",
+    image:
+      "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    author: {
+      name: "Sophie Chen",
+      avatar:
+        "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    },
+    category: "code",
+    summary:
+      "An exploration of upcoming trends and technologies in web development for 2025 and beyond.",
+    readTime: 8, // in minutes
+    publishedAt: "2025-03-12",
+  },
+  {
+    id: "a2",
+    title: "Effective UX Research Techniques",
+    image:
+      "https://images.pexels.com/photos/196646/pexels-photo-196646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    author: {
+      name: "Alex Morgan",
+      avatar:
+        "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    },
+    category: "ux",
+    summary:
+      "Learn how to conduct insightful user research that leads to actionable design improvements.",
+    readTime: 12, // in minutes
+    publishedAt: "2025-02-25",
+  },
+  {
+    id: "a3",
+    title: "AI and the Future of Design",
+    image:
+      "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    author: {
+      name: "Elena Rodriguez",
+      avatar:
+        "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    },
+    category: "ai",
+    summary:
+      "How artificial intelligence is revolutionizing design processes and creating new opportunities.",
+    readTime: 10, // in minutes
+    publishedAt: "2025-03-05",
+  },
+];
