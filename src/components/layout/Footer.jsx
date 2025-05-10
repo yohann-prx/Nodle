@@ -24,7 +24,52 @@ const Footer = () => {
               </button>
             </div>
             
+            <div className="md:col-span-1 lg:col-span-2">
+              <div className="grid grid-cols-2 gap-8">
+                <div>
+                  <h4 className="font-semibold text-gray-800 mb-4">Découverte</h4>
+                  <ul className="space-y-2">
+                    <li><Link to="/decouverte" className="text-gray-600 hover:text-primary">Découverte</Link></li>
+                    <li><Link to="/rechercher" className="text-gray-600 hover:text-primary">Rechercher</Link></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-800 mb-4">Profil</h4>
+                  <ul className="space-y-2">
+                    <li><Link to="/profil" className="text-gray-600 hover:text-primary">Profil</Link></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
             
+            <div>
+              <h4 className="font-semibold text-gray-800 mb-4">Newsletter</h4>
+              <p className="text-gray-600 mb-4">Restez informé des dernières nouveautés</p>
+              <form className="flex mb-4">
+                <input
+                  type="email"
+                  placeholder="Votre adresse email"
+                  className="px-4 py-2 bg-white border border-gray-300 rounded-l-md focus:outline-none focus:ring-1 focus:ring-primary flex-grow"
+                />
+                <button
+                  type="submit"
+                  className="bg-primary text-white px-4 py-2 rounded-r-md hover:bg-primary-dark transition-colors"
+                >
+                  →
+                </button>
+              </form>
+              <div className="flex space-x-4">
+                <a href="#" className="text-gray-600 hover:text-primary">
+                  <Instagram className="h-6 w-6" />
+                </a>
+                <a href="#" className="text-gray-600 hover:text-primary">
+                  <Youtube className="h-6 w-6" />
+                </a>
+                <a href="#" className="text-gray-600 hover:text-primary">
+                  <Facebook className="h-6 w-6" />
+                </a>
+              </div>
+            </div>
           </div>
           
           <div className="pt-8 border-t border-gray-200">
