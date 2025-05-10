@@ -73,3 +73,5 @@ const SchoolCard = ({ school }) => {
     </div>
   );
 };
+
+export default SchoolCard;
