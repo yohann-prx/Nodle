@@ -47,3 +47,14 @@ const ContentCard = ({ content, type = 'course' }) => {
           </>
         )}
         
+        {type === 'article' && (
+          <div className="absolute bottom-2 left-2 bg-black bg-opacity-75 text-white text-xs font-medium px-2 py-1 rounded">
+            {content.readTime} min de lecture
+          </div>
+        )}
+      </div>
+      
+      <div className="p-4">
+        <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2">
+          {content.title}
+        </h3>
