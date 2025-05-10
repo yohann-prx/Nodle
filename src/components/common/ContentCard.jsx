@@ -84,3 +84,28 @@ const ContentCard = ({ content, type = 'course' }) => {
           </div>
         )}
         
+        {type === 'article' && (
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-2">
+              <img 
+                src={content.author.avatar}
+                alt={content.author.name}
+                className="w-6 h-6 rounded-full object-cover"
+              />
+              <span className="text-sm text-gray-600">
+                {content.author.name}
+              </span>
+            </div>
+            
+            <button 
+              onClick={handleToggleFavorite}
+              className="text-gray-400 hover:text-primary transition-colors"
+            >
+              {isContentFavorite ? 
+                <BookmarkCheck className="h-5 w-5 text-primary" /> : 
+                <Bookmark className="h-5 w-5" />
+              }
+            </button>
+          </div>
+        )}
+      </div>
