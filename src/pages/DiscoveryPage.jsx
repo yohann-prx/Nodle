@@ -4,18 +4,18 @@ import { Search } from "lucide-react";
 import { useAppContext } from "../context/AppContext";
 
 const categories = [
-  { id: "design", name: "Design", icon: "D", color: "bg-primary text-white" },
-  { id: "code", name: "Code", icon: "</>", color: "bg-secondary text-white" },
-  { id: "design2", name: "Design", icon: "D", color: "bg-primary text-white" },
-  { id: "code2", name: "Code", icon: "</>", color: "bg-secondary text-white" },
-  { id: "design3", name: "Design", icon: "D", color: "bg-primary text-white" },
-  { id: "code3", name: "Code", icon: "</>", color: "bg-secondary text-white" },
-  { id: "design4", name: "Design", icon: "D", color: "bg-primary text-white" },
-  { id: "code4", name: "Code", icon: "</>", color: "bg-secondary text-white" },
-  { id: "design5", name: "Design", icon: "D", color: "bg-primary text-white" },
-  { id: "code5", name: "Code", icon: "</>", color: "bg-secondary text-white" },
-  { id: "design6", name: "Design", icon: "D", color: "bg-primary text-white" },
-  { id: "code6", name: "Code", icon: "</>", color: "bg-secondary text-white" },
+  { id: "design", name: "Design", color: "bg-primary text-white" },
+  { id: "code", name: "Code", color: "bg-secondary text-white" },
+  { id: "design2", name: "3D", color: "bg-primary text-white" },
+  { id: "code2", name: "UX/UI", color: "bg-secondary text-white" },
+  { id: "design3", name: "Motion", color: "bg-primary text-white" },
+  { id: "code3", name: "DevOps", color: "bg-secondary text-white" },
+  { id: "design4", name: "Data", color: "bg-primary text-white" },
+  { id: "code4", name: "AI", color: "bg-secondary text-white" },
+  { id: "design5", name: "Cyber", color: "bg-primary text-white" },
+  { id: "code5", name: "Montage", color: "bg-secondary text-white" },
+  { id: "design6", name: "Pitch", color: "bg-primary text-white" },
+  { id: "code6", name: "Product", color: "bg-secondary text-white" },
 ];
 
 const DiscoveryPage = () => {
