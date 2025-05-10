@@ -33,7 +33,7 @@ L'application est entièrement réactive et offre une expérience utilisateur fl
 
 1. Clonez le répertoire
 ```bash
-git https://github.com/yohann-prx/Nodle.git
+git clone https://github.com/yohann-prx/Nodle.git
 cd Nodle
 ```
 2. Installez les dépendances
