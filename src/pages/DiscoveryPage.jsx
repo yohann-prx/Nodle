@@ -17,3 +17,11 @@ const categories = [
   { id: "design6", name: "Design", icon: "D", color: "bg-primary text-white" },
   { id: "code6", name: "Code", icon: "</>", color: "bg-secondary text-white" },
 ];
+
+const DiscoveryPage = () => {
+  const { searchQuery, setSearchQuery } = useAppContext();
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+  };
+};
