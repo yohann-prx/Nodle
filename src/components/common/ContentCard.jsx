@@ -109,3 +109,25 @@ const ContentCard = ({ content, type = 'course' }) => {
           </div>
         )}
       </div>
+      
+      {type === 'course' && (
+        <div className="px-4 pb-4 pt-2 flex items-center space-x-2">
+          <span className="text-xs font-medium px-2 py-1 bg-gray-100 text-gray-800 rounded">
+            {content.category === '3d' ? '3D' : 
+             content.category === 'ai' ? 'IA' : 
+             content.category.charAt(0).toUpperCase() + content.category.slice(1)}
+          </span>
+          {content.type === 'long-video' ? (
+            <span className="text-xs font-medium px-2 py-1 bg-blue-100 text-blue-800 rounded">
+              Vidéo longue
+            </span>
+          ) : (
+            <span className="text-xs font-medium px-2 py-1 bg-green-100 text-green-800 rounded">
+              Vidéo courte
+            </span>
+          )}
+        </div>
+      )}
+    </motion.div>
+  );
+};
