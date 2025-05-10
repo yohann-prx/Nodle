@@ -34,3 +34,7 @@ const SchoolCard = ({ school }) => {
             ))}
           </div>
         </div>
+
+        <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+          {school.description}
+        </p>
