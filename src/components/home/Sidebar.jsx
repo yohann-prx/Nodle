@@ -41,4 +41,13 @@ const topics = [
   const Sidebar = () => {
     const [expandedTopics, setExpandedTopics] = useState(topics.map(topic => topic.id));
     const [activeSubtopic, setActiveSubtopic] = useState('3d'); // Default active subtopic
-    
+  
+    const toggleTopic = (topicId) => {
+        setExpandedTopics(prevExpanded => {
+          if (prevExpanded.includes(topicId)) {
+            return prevExpanded.filter(id => id !== topicId);
+          } else {
+            return [...prevExpanded, topicId];
+          }
+        });
+      };
