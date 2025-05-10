@@ -37,6 +37,7 @@ export default {
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
+        montserratAlt: ['"Montserrat Alternates"', "sans-serif"],
       },
       boxShadow: {
         card: "0 2px 8px rgba(0, 0, 0, 0.05)",

@@ -210,13 +210,13 @@ export const mockArticles = [
 export const mockSchools = [
   {
     id: "s1",
-    name: "Tech Academy",
-    logo: "https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    location: "Paris, France",
+    name: "HETIC",
+    logo: "https://cdn.discordapp.com/attachments/1351121599440621651/1370791371094491227/HETIC-TC.png?ex=6820c872&is=681f76f2&hm=e9c503adf782b6c46854e38abcdcc9cffc71c76caf001cae780c5579cd90c10b&",
+    location: "Montreuil, France",
     programTypes: ["Bootcamp", "Bachelor", "Master"],
     specializations: ["Web Development", "Data Science", "UX/UI Design"],
-    rating: 4.7,
-    reviewCount: 425,
+    rating: 4.2,
+    reviewCount: 274,
     tuition: {
       min: 5000,
       max: 15000,
@@ -234,13 +234,13 @@ export const mockSchools = [
     ],
     placementRate: 92,
     description:
-      "Tech Academy est une école de référence dans le domaine du numérique, offrant des formations intensives et diplômantes de haute qualité.",
+      "HETIC est un établissement privé d'enseignement supérieur fondé en 2002 et spécialisé dans le numérique, l'internet et l'infographie tridimensionnelle. Son campus est situé à Montreuil en France...",
   },
   {
     id: "s2",
-    name: "Digital Innovation Institute",
-    logo: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    location: "Lyon, France",
+    name: "École 42",
+    logo: "https://cdn.discordapp.com/attachments/1351121599440621651/1370792012327944302/Photo-mysteCC80re2.png?ex=6820c90b&is=681f778b&hm=001df4b83140bff2dda6ee19ba8656b3be28031898f6bf29512f825a6252c9a4&",
+    location: "Paris, France",
     programTypes: ["Certification", "Bachelor", "Master"],
     specializations: [
       "AI & Machine Learning",
@@ -248,7 +248,7 @@ export const mockSchools = [
       "Game Development",
     ],
     rating: 4.5,
-    reviewCount: 310,
+    reviewCount: 462,
     tuition: {
       min: 4000,
       max: 18000,
@@ -266,21 +266,21 @@ export const mockSchools = [
     ],
     placementRate: 88,
     description:
-      "Le Digital Innovation Institute forme les talents du numérique de demain avec une pédagogie basée sur des projets concrets et des intervenants professionnels.",
+      "42 est une école d’informatique révolutionnaire qui casse les codes de l’enseignement traditionnel. Sans professeur, sans cours magistraux, et totalement gratuite, 42 propose...",
   },
   {
     id: "s3",
-    name: "Creative Code School",
-    logo: "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    location: "Bordeaux, France",
+    name: "Wild Code School",
+    logo: "https://cdn.discordapp.com/attachments/1351121599440621651/1370792450259423293/0x0.png?ex=6820c974&is=681f77f4&hm=3a08f699083715729a3ac6bdc1ea483ca392a10760c2fbf937a195368384ef77&",
+    location: "Paris, France",
     programTypes: ["Bootcamp", "Certification"],
     specializations: [
       "Frontend Development",
       "3D & Animation",
       "Mobile App Development",
     ],
-    rating: 4.8,
-    reviewCount: 215,
+    rating: 4.3,
+    reviewCount: 71,
     tuition: {
       min: 3500,
       max: 9000,
@@ -298,6 +298,6 @@ export const mockSchools = [
     ],
     placementRate: 85,
     description:
-      "Creative Code School propose des formations intensives pour permettre à chacun de se reconvertir dans les métiers créatifs du numérique.",
+      "Wild Code School est une école tech nouvelle génération qui forme aux métiers du numérique à travers une pédagogie pratique, humaine et tournée vers l’employabilité. Développement web, data, cybersécurité, product management…",
   },
 ];
