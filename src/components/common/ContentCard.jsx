@@ -33,3 +33,17 @@ const ContentCard = ({ content, type = 'course' }) => {
               alt={content.title} 
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
+
+         {type === 'course' && (
+          <>
+            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <button className="bg-primary text-white rounded-full p-2 transform hover:scale-110 transition-transform">
+                <Play className="h-6 w-6" fill="white" />
+              </button>
+            </div>
+            <div className="absolute bottom-2 right-2 bg-black bg-opacity-75 text-white text-xs font-medium px-2 py-1 rounded">
+              {formatDuration(content.duration)}
+            </div>
+          </>
+        )}
+        
