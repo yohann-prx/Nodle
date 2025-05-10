@@ -19,3 +19,18 @@ const SchoolCard = ({ school }) => {
                 </div>
               </div>
             </div>
+
+            <div className="mb-3">
+          <div className="flex items-center mb-1">
+            <Star className="h-4 w-4 text-amber-400 mr-1" />
+            <span className="font-medium text-gray-900">{school.rating}</span>
+            <span className="text-sm text-gray-500 ml-1">({school.reviewCount} avis)</span>
+          </div>
+          <div className="flex flex-wrap gap-1 mb-2">
+            {school.programTypes.map((type, index) => (
+              <span key={index} className="text-xs font-medium px-2 py-1 bg-gray-100 text-gray-800 rounded">
+                {type}
+              </span>
+            ))}
+          </div>
+        </div>
