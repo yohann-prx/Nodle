@@ -15,3 +15,48 @@
     --text-primary: #333333;
     --text-secondary: #6b7280;
 }
+
+body {
+    font-family: "Inter", sans-serif;
+    @apply bg-gray-50 text-gray-900;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+}
+
+.sidebar-link {
+    @apply flex items-center gap-2 py-2 px-4 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors;
+}
+
+.sidebar-link.active {
+    @apply bg-blue-100 text-blue-700 font-medium;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full hover:bg-gray-400;
+}
