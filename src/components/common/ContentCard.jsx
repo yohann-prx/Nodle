@@ -109,7 +109,7 @@ const ContentCard = ({ content, type = 'course' }) => {
           </div>
         )}
       </div>
-      
+
       {type === 'course' && (
         <div className="px-4 pb-4 pt-2 flex items-center space-x-2">
           <span className="text-xs font-medium px-2 py-1 bg-gray-100 text-gray-800 rounded">
@@ -131,3 +131,5 @@ const ContentCard = ({ content, type = 'course' }) => {
     </motion.div>
   );
 };
+
+export default ContentCard;
