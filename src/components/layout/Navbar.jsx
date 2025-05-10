@@ -67,7 +67,64 @@ const Navbar = () => {
           </div>
         </div>
         
-        
+        {/* Mobile menu */}
+        {isMobileMenuOpen && (
+          <div className="fixed inset-0 z-50 bg-white">
+            <div className="container mx-auto px-4 py-4">
+              <div className="flex justify-between items-center mb-8">
+                <Link to="/" className="flex items-center space-x-2">
+                  <NodleLogo />
+                </Link>
+                <button onClick={toggleMobileMenu}>
+                  <X className="h-6 w-6 text-gray-700" />
+                </button>
+              </div>
+              
+              <form onSubmit={handleSearchSubmit} className="mb-6">
+                <div className="relative">
+                  <input
+                    type="text"
+                    placeholder="Rechercher..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="bg-gray-100 rounded-full py-3 pl-10 pr-4 w-full focus:outline-none focus:ring-2 focus:ring-primary focus:bg-white"
+                  />
+                  <Search className="absolute left-3 top-3.5 h-5 w-5 text-gray-500" />
+                </div>
+              </form>
+              
+              <nav className="flex flex-col space-y-4">
+                <NavLink 
+                  to="/decouverte"
+                  className={({ isActive }) => 
+                    `text-lg font-medium py-2 ${isActive ? 'text-primary' : 'text-gray-700'}`
+                  }
+                  onClick={toggleMobileMenu}
+                >
+                  Découverte
+                </NavLink>
+                <NavLink 
+                  to="/formations"
+                  className={({ isActive }) => 
+                    `text-lg font-medium py-2 ${isActive ? 'text-primary' : 'text-gray-700'}`
+                  }
+                  onClick={toggleMobileMenu}
+                >
+                  Formations
+                </NavLink>
+                <NavLink 
+                  to="/profil"
+                  className={({ isActive }) => 
+                    `text-lg font-medium py-2 ${isActive ? 'text-primary' : 'text-gray-700'}`
+                  }
+                  onClick={toggleMobileMenu}
+                >
+                  Profil
+                </NavLink>
+              </nav>
+            </div>
+          </div>
+        )}
       </header>
     );
   };
