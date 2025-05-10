@@ -98,4 +98,5 @@ const topics = [
         </aside>
       );
     };
-    
+
+export default Sidebar;
