@@ -19,3 +19,5 @@ const NodleLogo = ({ size = 'md' }) => {
         </div>
       );
     };
+
+export default NodleLogo;
