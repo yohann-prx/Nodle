@@ -38,7 +38,7 @@ const SchoolCard = ({ school }) => {
         <p className="text-gray-600 text-sm mb-4 line-clamp-2">
           {school.description}
         </p>
-        
+
         <div className="flex justify-between text-sm mb-4">
           <div className="flex items-center">
             <Clock className="h-4 w-4 text-gray-400 mr-1" />
@@ -49,3 +49,16 @@ const SchoolCard = ({ school }) => {
             <span>{school.tuition.min.toLocaleString()}-{school.tuition.max.toLocaleString()} {school.tuition.currency}</span>
           </div>
         </div>
+
+        <div className="pt-3 border-t border-gray-100">
+          <h4 className="font-medium text-gray-900 mb-2">Spécialisations</h4>
+          <div className="flex flex-wrap gap-1">
+            {school.specializations.map((spec, index) => (
+              <span key={index} className="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">
+                {spec}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+      
