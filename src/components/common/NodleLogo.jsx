@@ -7,3 +7,15 @@ const NodleLogo = ({ size = 'md' }) => {
       md: 'h-8',
       lg: 'h-10'
     };
+
+    return (
+        <div className="flex items-center">
+          <div className="text-primary mr-1">
+            <Box className={`${sizeClasses[size]} transform rotate-45`} strokeWidth={3} />
+          </div>
+          <span className={`font-bold text-primary ${size === 'lg' ? 'text-2xl' : size === 'md' ? 'text-xl' : 'text-lg'}`}>
+            nodle
+          </span>
+        </div>
+      );
+    };
