@@ -38,3 +38,14 @@ const SchoolCard = ({ school }) => {
         <p className="text-gray-600 text-sm mb-4 line-clamp-2">
           {school.description}
         </p>
+        
+        <div className="flex justify-between text-sm mb-4">
+          <div className="flex items-center">
+            <Clock className="h-4 w-4 text-gray-400 mr-1" />
+            <span>{school.duration.min}-{school.duration.max} {school.duration.unit}s</span>
+          </div>
+          <div className="flex items-center">
+            <Euro className="h-4 w-4 text-gray-400 mr-1" />
+            <span>{school.tuition.min.toLocaleString()}-{school.tuition.max.toLocaleString()} {school.tuition.currency}</span>
+          </div>
+        </div>
