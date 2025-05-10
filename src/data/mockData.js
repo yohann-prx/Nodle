@@ -205,3 +205,99 @@ export const mockArticles = [
     publishedAt: "2025-03-05",
   },
 ];
+
+// Mock data for schools
+export const mockSchools = [
+  {
+    id: "s1",
+    name: "Tech Academy",
+    logo: "https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    location: "Paris, France",
+    programTypes: ["Bootcamp", "Bachelor", "Master"],
+    specializations: ["Web Development", "Data Science", "UX/UI Design"],
+    rating: 4.7,
+    reviewCount: 425,
+    tuition: {
+      min: 5000,
+      max: 15000,
+      currency: "EUR",
+    },
+    duration: {
+      min: 3,
+      max: 36,
+      unit: "month",
+    },
+    admissionRequirements: [
+      "Baccalauréat ou équivalent",
+      "Entretien individuel",
+      "Test technique (selon la formation)",
+    ],
+    placementRate: 92,
+    description:
+      "Tech Academy est une école de référence dans le domaine du numérique, offrant des formations intensives et diplômantes de haute qualité.",
+  },
+  {
+    id: "s2",
+    name: "Digital Innovation Institute",
+    logo: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    location: "Lyon, France",
+    programTypes: ["Certification", "Bachelor", "Master"],
+    specializations: [
+      "AI & Machine Learning",
+      "Cybersecurity",
+      "Game Development",
+    ],
+    rating: 4.5,
+    reviewCount: 310,
+    tuition: {
+      min: 4000,
+      max: 18000,
+      currency: "EUR",
+    },
+    duration: {
+      min: 6,
+      max: 48,
+      unit: "month",
+    },
+    admissionRequirements: [
+      "Baccalauréat ou équivalent",
+      "Portfolio de projets",
+      "Entretien de motivation",
+    ],
+    placementRate: 88,
+    description:
+      "Le Digital Innovation Institute forme les talents du numérique de demain avec une pédagogie basée sur des projets concrets et des intervenants professionnels.",
+  },
+  {
+    id: "s3",
+    name: "Creative Code School",
+    logo: "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    location: "Bordeaux, France",
+    programTypes: ["Bootcamp", "Certification"],
+    specializations: [
+      "Frontend Development",
+      "3D & Animation",
+      "Mobile App Development",
+    ],
+    rating: 4.8,
+    reviewCount: 215,
+    tuition: {
+      min: 3500,
+      max: 9000,
+      currency: "EUR",
+    },
+    duration: {
+      min: 2,
+      max: 12,
+      unit: "month",
+    },
+    admissionRequirements: [
+      "Aucun prérequis technique",
+      "Forte motivation",
+      "Test d'aptitude",
+    ],
+    placementRate: 85,
+    description:
+      "Creative Code School propose des formations intensives pour permettre à chacun de se reconvertir dans les métiers créatifs du numérique.",
+  },
+];
