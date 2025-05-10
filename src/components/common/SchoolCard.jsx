@@ -62,3 +62,14 @@ const SchoolCard = ({ school }) => {
         </div>
       </div>
       
+      <div className="bg-gray-50 px-5 py-3 flex justify-between">
+        <button className="text-gray-700 text-sm font-medium hover:text-primary transition-colors">
+          Comparer
+        </button>
+        <button className="text-primary text-sm font-medium hover:text-primary-dark transition-colors">
+          Voir les détails
+        </button>
+      </div>
+    </div>
+  );
+};
